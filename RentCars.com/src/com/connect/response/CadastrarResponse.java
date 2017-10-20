@@ -3,7 +3,7 @@ package com.connect.response;
 
 import com.google.gson.annotations.SerializedName;
 
-public class CadastrarResponse  {
+public class CadastrarResponse extends ResponseModel {
     @SerializedName("Autenticacao")
     public String autenticacao;
     @SerializedName("Codigo")

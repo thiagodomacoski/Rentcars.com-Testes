@@ -15,9 +15,7 @@ public abstract class RequestModel extends RequestBody{
 		return MediaType.parse("application/json");
 	}
 
-	@Override
-	public void writeTo(BufferedSink arg0) throws IOException {	}
-
+	
 	public String toJson() {
 		final Gson gson = new GsonBuilder().create();
 		return gson.toJson(this);
@@ -26,4 +24,9 @@ public abstract class RequestModel extends RequestBody{
 	public RequestBody getRequestBody() {
 		return  RequestBody.create(contentType(), toJson());
 	}
+	
+	@Override
+	public void writeTo(BufferedSink arg0) throws IOException {	}
+
+	
 }

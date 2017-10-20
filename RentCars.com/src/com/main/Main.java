@@ -4,6 +4,7 @@ package com.main;
 import com.connect.Connect;
 import com.connect.request.CadastrarRequest;
 import com.connect.response.CadastrarResponse;
+import com.io.WriteObject;
 import com.utils.Constants;	
 
 public class Main {
@@ -25,6 +26,9 @@ public class Main {
 				System.out.println("connect: " + urlVisualizarCliente);
 				final String dataVisualizar = Connect.get(urlVisualizarCliente);
 				System.out.println(dataVisualizar);
+				final CadastrarResponse response = Constants.GSON.fromJson(dataVisualizar, CadastrarResponse.class);
+				
+				WriteObject.write(CadastrarResponse.class, dataVisualizar);
 			}
 
 		} catch (final Exception e) {
