@@ -6,11 +6,6 @@ import com.connect.request.CadastrarRequest;
 
 public class Util {
 
-	public static void main(String[] args) {
-		 final CadastrarRequest cadastrarRequest = CadastrarRequest.inflate();
-		 System.out.println(cadastrarRequest);
-	}
-	
 	
 	public static String generateCPF() {
 		return (generateInteger(3)+"."+generateInteger(3)+"."+generateInteger(3)+"-"+generateInteger(2));

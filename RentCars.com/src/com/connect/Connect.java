@@ -32,7 +32,7 @@ public class Connect {
 		}
 		final OkHttpClient client = new OkHttpClient();
 		final Request request  = new Request.Builder().url(url).
-				   post(model).addHeader("cache-control", "no-cache")
+				   post(model.getRequestBody()).addHeader("cache-control", "no-cache")
 				  .addHeader("Content-Type", "application/json").build();
 		final Response response = client.newCall(request).execute();
 		if(response.code() == 200) {
