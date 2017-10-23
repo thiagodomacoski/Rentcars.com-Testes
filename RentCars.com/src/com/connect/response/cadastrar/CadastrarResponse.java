@@ -1,6 +1,7 @@
 
-package com.connect.response;
+package com.connect.response.cadastrar;
 
+import com.connect.response.ResponseModel;
 import com.google.gson.annotations.SerializedName;
 
 public class CadastrarResponse extends ResponseModel {

@@ -1,5 +1,5 @@
 
-package com.connect.response;
+package com.connect.response.cadastrar;
 
 import javax.annotation.Generated;
 import com.google.gson.annotations.SerializedName;

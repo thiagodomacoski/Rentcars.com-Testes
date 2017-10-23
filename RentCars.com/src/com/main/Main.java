@@ -3,7 +3,7 @@ package com.main;
 
 import com.connect.Connect;
 import com.connect.request.CadastrarRequest;
-import com.connect.response.CadastrarResponse;
+import com.connect.response.cadastrar.CadastrarResponse;
 import com.io.WriteObject;
 import com.utils.Constants;	
 

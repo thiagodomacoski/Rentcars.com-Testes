@@ -1,11 +1,11 @@
 
-package com.connect.response;
+package com.connect.response.cadastrar;
 
 import com.google.gson.annotations.SerializedName;
 
-public class Pais {
+public class Nacionalidade {
     @SerializedName("Codigo")
-    public Long codigo;
+    public int codigo;
     @SerializedName("ISO")
     public String iso;
     @SerializedName("Nome")
